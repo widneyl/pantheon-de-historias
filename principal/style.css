@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&family=Unna&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+:root{
+    --font-titulo: 'Protest Strike', sans-serif;
+    --font-padrao: 'Unna', serif;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: rgb(31, 30, 30);
+    font-size: 19px;
+    
+}
+
+header{
+    background-color: rgb(15, 15, 15);
+    color: white;
+    
+}
+
+header > h1{
+    padding: 50px 0px 40px 0px;
+
+    font-family: var(--font-titulo);
+    text-align: center;
+    font-weight: inherit;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+header nav{
+    text-align: right;
+    padding: 0px 0px 10px 0px;
+}
+header a{
+    margin-right: 20px;
+
+    text-transform: capitalize;
+    font-family: var(--font-titulo);
+    color: white;
+    font-weight: initial;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}

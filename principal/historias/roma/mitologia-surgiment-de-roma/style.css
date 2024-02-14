@@ -38,16 +38,24 @@ header > h1{
 }
 header nav{
     text-align: right;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 20px 0px;
 }
 header a{
-    margin-right: 20px;
-
-    text-transform: lowercase;
+    margin-right: 30px;
     font-family: var(--font-titulo);
+    font-size: 15px;
+    font-weight: 100;
     color: white;
-    font-weight: initial;
-    font-size: 14px;
+
+    border: solid 1px transparent;
+    padding: 8px;
+
+}
+
+header a:hover{
+    transition: .4s;
+    border: solid 1px white;
+    border-radius: 10px;
 }
 
 h2{
@@ -121,6 +129,6 @@ footer{
 footer a{
     color: rgb(254, 255, 255);
 }
-a:hover{
+footer a:hover{
     text-decoration: underline;
 }

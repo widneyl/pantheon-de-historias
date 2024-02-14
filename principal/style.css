@@ -21,35 +21,104 @@ html, body{
     
 }
 
-header{
+/*Configurações relacionadas ao cabeçalho*/
+
+.cabecalho{
+    display: flex;
+    padding: 15px 100px;
     background-color: rgb(15, 15, 15);
-    color: white;
+
+    justify-content: space-between;
     
 }
-
-header > h1{
-    padding: 50px 0px 40px 0px;
-
+.logo{
+    width: 120px;
+    border-radius: 8px;
+}
+.menu a{
     font-family: var(--font-titulo);
-    text-align: center;
-    font-weight: inherit;
-    font-size: 32px;
-    text-transform: uppercase;
-}
-header nav{
-    text-align: right;
-    padding: 0px 0px 10px 0px;
-}
-header a{
-    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    width: 300px;
+    height: 37.6px;
+    margin-left: 40px;
+    
 
-    text-transform: capitalize;
+    border: solid 1px transparent;
+    padding: 5px;
+
+}
+.menu a:hover{
+    transition: .4s;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+.menu .btnEntrar{
+    margin-left: 40px;
+    padding: 10px 15px;
+    width: 90px;
+    outline: none;
+
+    background-color: transparent;
     font-family: var(--font-titulo);
     color: white;
-    font-weight: initial;
-    font-size: 14px;
-    text-decoration: none;
+    
+
+    border: solid 1px white;
+    border-radius: 10px;
+
+    cursor: pointer;
 }
-a:hover{
-    text-decoration: underline;
+.menu .btnEntrar:hover{
+    transition: .4s;
+    background-color: white;
+    color: black;
 }
+
+
+/*Configurações relacionadas ao Main*/
+
+.conteudo-principal{
+    padding: 10px 10px 0px 10px;
+}
+
+/*Configurações a ultima historia*/
+
+.ultima-historia{
+    display: flex;
+}
+.img-ultima-postagem{
+    max-width: 400px;
+    height: 190px;
+    border-radius: 10px;
+    border: solid 1px transparent;
+}
+.img-ultima-postagem:hover{
+    transition: .4s;
+    border: solid 1px white;
+}
+.descri-ultima-hist{
+    margin-top: 10px;
+}
+.descri-ultima-hist a{
+    margin-left: 15px;
+    height: 20px;
+    font-family: var(--font-titulo);
+    color: white;
+
+    border: solid 1px transparent;
+    padding: 8px;
+}
+.descri-ultima-hist a:hover{
+    transition: .4s;
+    border: solid 1px white;
+    border-radius: 10px;
+}
+.descri-ultima-hist p{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+}
+
+

@@ -1,0 +1,42 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 280px;
+}
+.logo{
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    margin-right: 80px;
+    margin-top: 20px;
+    background-color: black;
+
+}
+.links a{
+    height: 28px;
+    background-color: black;
+}
+
+span{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin-right: 40px;
+   
+    
+}
+
+.bloco_inferior{
+    background-color: black;
+    height: 100px;
+}

@@ -1,0 +1,17 @@
+.Footer{
+    margin-top: auto;
+    height: 65px;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+a{  
+    color: white;
+    font-size: 15px;
+}
+.Github{
+    font-size: 20px;
+    margin-top: 22.5px;   
+}

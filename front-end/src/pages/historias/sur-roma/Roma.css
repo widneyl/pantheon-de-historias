@@ -1,0 +1,66 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Protest+Strike&family=Unna&display=swap');
+
+:root{
+    --font-titulo: 'Protest Strike', sans-serif;
+    --font-padrao: 'Unna', serif;
+}
+
+h2{
+    font-family: var(--font-padrao);
+    font-weight: inherit;
+    font-size: 32px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+}
+
+section > p{
+    text-indent: 10px;
+    padding-bottom: 10px;
+}
+
+section.imagem{
+    position: relative;
+    background-color: rgb(65, 64, 64);
+    color: rgb(255, 255, 255);
+    
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.24);
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0px 5px 0px 5px;
+    margin: 0px 20px 0px 0px;
+    max-width: 800px;
+    min-width: 300px;
+    
+}
+section#img-01-roma{
+    background-image: url(./imagens/001.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+section#img-02-roma{
+    background-image: url(./imagens/003.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+section.normal-roma{
+    background-color: rgba(255, 255, 255, 0.842);
+    color: rgb(15, 15, 15);
+    
+}

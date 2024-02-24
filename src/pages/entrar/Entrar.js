@@ -8,25 +8,26 @@ import axios from "axios";
 function Entrar(){
 
 
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
+    const [nomeUser, setNome] = useState('');
+    const [emailUser, setEmail] = useState('');
+    const [senhaUser, setSenha] = useState('');
 
     function enviar(e){
         e.preventDefault()
         
         const dados = {
-            "nome": nome,
-            "email": email,
-            "senha": senha
-        }
+            nome: nomeUser,
+            email: emailUser,
+            senha: senhaUser
+        };
+        
 
         axios.post("http://localhost:8080/cadastrar", dados)
         .then((response) => {
             console.log(response)
         })
         .catch((err) => {
-            console.log(err)
+            console.log('deu erro')
         })
 
     }
@@ -37,9 +38,9 @@ function Entrar(){
             <div className="cadastro">  
                 <form>
                     <h2>Cadastro</h2>
-                    <input autoComplete="off" name="nome" type="text" placeholder="Nome" value={nome} onChange={(e) => setNome(e.target.value)}></input>
-                    <input autoComplete="off" type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
-                    <input autoComplete="off" type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)}></input>
+                    <input autoComplete="off" name="nome" type="text" placeholder="Nome" value={nomeUser} onChange={(e) => setNome(e.target.value)}></input>
+                    <input autoComplete="off" type="text" placeholder="Email" value={emailUser} onChange={(e) => setEmail(e.target.value)}></input>
+                    <input autoComplete="off" type="password" placeholder="Senha" value={senhaUser} onChange={(e) => setSenha(e.target.value)}></input>
                     <button onClick={enviar}>Entrar</button>
                 </form>
             </div>
